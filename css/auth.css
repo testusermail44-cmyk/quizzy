@@ -1,0 +1,65 @@
+.auth-logo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+  max-width: 120px;
+  width: 120px;
+  height: 120px;
+  min-width: 90px;
+  min-height: 90px;
+  max-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(30deg);
+}
+
+.gamepad-logo {
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  color: white;
+  position: relative;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  padding: 10px 30px;
+  background: #06001ef0;
+  border-radius: 15px;
+}
+
+span.cap-let {
+  font-size: 50px;
+  color: #4e6cfe;
+  font-family: sans-serif;
+  margin-left: 20px;
+  font-size: clamp(100px, 5vw, 150px);
+}
+
+span.logo-word {
+  color: white;
+  font-family: biscuit;
+  font-size: 30px;
+  font-size: clamp(60px, 5vw, 90px);
+}
+
+.gamepad-logo {
+  text-decoration: none;
+}
+
+.left-side {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

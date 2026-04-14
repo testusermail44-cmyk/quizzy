@@ -1,0 +1,36 @@
+.wellcome {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 80px);
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.wellcome-container {
+  width: fit-content;
+  background: #01004b;
+  border: 10px solid #01004b;
+  border-radius: 20px;
+  position: relative;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0px 15px rgba(0, 0, 0, 1);
+}
+
+.wellcome-border {
+  background: transparent;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid;
+  border-color: #4e6cfe;
+  border-radius: 20px;
+  pointer-events: none;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 1);
+}

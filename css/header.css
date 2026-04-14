@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "biscuit";
+  src: url("../fonts/CRUSH\ BISCUIT.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  height: 60px;
+  background: radial-gradient(circle, #1f007b 0%, #01004b 100%);
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(30deg);
+}
+
+.gamepad-logo {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  pointer-events: inherit;
+}
+
+span.cap-let {
+  font-size: 50px;
+  color: #4e6cfe;
+  font-family: sans-serif;
+  margin-left: 20px;
+}
+
+span.logo-word {
+  color: white;
+  font-family: biscuit;
+  font-size: 30px;
+}
+
+.gamepad-logo {
+  text-decoration: none;
+}
+
+.header-link-button {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bolder;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.header-link-button::before {
+  content: "";
+  width: 0%;
+  height: 0px;
+  border-radius: 10px;
+  border: 2px solid white;
+  opacity: 0;
+  transition: 0s ease;
+  transition: width 0.2s ease, opacity 0.2s ease;
+}
+
+.header-link-button:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.buttons-header {
+  display: flex;
+}
