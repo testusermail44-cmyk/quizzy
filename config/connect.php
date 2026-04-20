@@ -1,6 +1,8 @@
 <?php
+    $host = getenv('DB_HOST');
+    $user = getenv('DB_USER');
     $pass = getenv('DB_PASS');
-    $conn = new mysqli("mysql-33ac47be-testusermail44-ffa1.a.aivencloud.com:25072", "avnadmin", $pass, "quizzy");
+    $conn = new mysqli($host, $user, $pass, "quizzy");
     if (!$conn || $conn->connect_errno) {
         die("DB error: " . $conn->connect_error);
     }
