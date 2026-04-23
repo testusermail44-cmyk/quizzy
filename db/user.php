@@ -5,7 +5,7 @@ function addUser($conn, $username, $surname, $email, $password)
     if (userExists($conn, $email)) {
         return "exists";
     }
-    $stmt = $conn->prepare("INSERT INTO users (username, surname, email, password_hash) VALUES (?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO users (username, surname, email, password_hash, scores) VALUES (?, ?, ?, ?, 0)");
     $stmt->bind_param("ssss", $username, $surname, $email, $hash);
     return $stmt->execute();
 }
