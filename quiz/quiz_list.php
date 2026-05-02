@@ -11,7 +11,7 @@ if (isStart()){
     endQuiz($conn);
 }
 $quizzes = getQuizList($conn);  
-$scores = getScores($conn, $_SESSION['user']['id'])['scores'];
+$scores = getScores($conn, $_SESSION['user']['id'])['scores'] ?? 0;
 $level = (int)($scores / 1000);
 function createQuizCard($id, $name, $desription, $count, $attempts, $difficulty, $bestTime, $bestAnswear)
 {
